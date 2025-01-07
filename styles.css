@@ -1,0 +1,225 @@
+@font-face {
+    font-family: Tahoma;
+    src: url(tahoma.ttf);
+}
+@font-face {
+    font-family: FranklinGoth;
+    src: url(Franklin\ Gothic\ Book\ Regular.ttf);
+}
+.bars{
+    height: 100px;
+    background-color: #2C009C;
+    width: 100vw;
+    margin: 0   ;
+    position: absolute;
+}
+#bottom{
+    position: fixed;
+    bottom: 0;
+    height: 130px;
+    background-image: linear-gradient(to right, #4F00AC, #2C009C);
+}
+body{
+    margin: 0;
+    background-color: #6266DD;
+    font-family: Tahoma;
+    color: #FFF;
+}
+#topBarSep{
+    background-image: linear-gradient(to right, #ffffff00, #A1ADEF, #A1ADEF, #ffffff00, #ffffff00); 
+    height: 2.5px;
+    margin: 0;
+    border: 0;
+    padding-top: 100px;
+}
+#botBarSep {
+    background-image: linear-gradient(to right, #FFFFFF00, #DE884E, #DE884E, #FFFFFF00, #FFFFFF00); 
+    height: 3px;
+    border: 0;
+    bottom: 122px;
+    position: fixed;
+    width: 100%;
+}
+#midSep {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), #7D8CE7, #7D8CE7, #ffffff00); 
+    height: calc(100vh - 100px - 100px); /* Adjusted to span between topBarSep and botBarSep */
+    width: 2px;
+    border: 0;
+    margin: 0;
+    position: fixed;
+    top: 100px; /* Position it below topBarSep */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+}
+.center {
+    margin: auto;
+    width: 99%;
+    padding: 0;
+}
+#dot{
+    width: 480px;
+    height: 480px;
+    background-image: radial-gradient(closest-side, #94A8EF,#6266DD);
+    border-radius: 50%;
+    left: -140px;
+    top: -81px;
+    position: absolute;
+    z-index: -1;
+}
+.name {
+    margin: 0;
+    top: 47vh;
+    right: 0;
+    position: fixed;
+    display: inline;
+    font-family: Tahoma;
+    color: white;
+    width: 500px;
+    height: 90px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #2C009C, #6266DD);
+}
+
+.name::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 9px;
+    padding: 1.5px; /* Adjust as needed */
+    background: linear-gradient(to right, #FFF 0%, #FFFFFF00 100%);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+#pfp{
+    height: 60px;
+    width: 60px;
+    border: 2px solid #f7f30b;
+    border-radius: 6px;
+    display: flex;
+    margin-top: 12px;
+    margin-left: 11px;
+    position: inherit;
+}
+#userInput{
+    padding-top: 0px;
+    margin: 0;
+    padding-left: 90px;
+}
+#username{
+    font-size: 29px;
+    margin: 0;
+    padding-top: 5px;
+}
+#password{
+    font-size: 12px;
+    margin: 0;
+    padding-top: 11px;
+    padding-left: 40px;
+    transform: scaleX(123%);
+}
+#passInput{
+    margin-top: 6px;
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: 6px;
+    width: 230px;
+    height: 37px;
+}
+.buttons img{
+    width: 37px;
+    height: 37px;
+    border: 1px solid white;
+    border-radius: 5px;
+    position: sticky;
+    transform: translate3d(270px, -39px, 0);
+}
+.buttons p{
+    font-family: Tahoma;
+    font-size: 16px;
+    position: absolute;
+    transform: translate3d(242px, -47px, 0)
+}
+#logout{
+    width: 37px;
+    height: 37px;
+    margin: 0;
+    bottom: 60px;
+    left: 30px;
+    position: fixed;
+}
+.addAccs{
+    margin: 0;
+    right: 100px;
+    position: fixed;
+    font-size: 16px;
+    transform: scaleX(117%);
+}
+#offTxt{
+    font-size: 25px;
+    transform: scaleX(119%);
+    left: 100px;
+    position: fixed;
+    padding-top: 9px;
+}
+#addAccs1{
+    margin: 0;
+    margin-top: 25px;
+}
+#addAccs2{
+    margin: 0;
+}
+.fullLogo{
+    font-family: FranklinGoth;
+    letter-spacing: -2px;
+    transform: scaleY(96%);
+    font-weight: 10px;
+    top: 40.7vh;
+    left: 39%;
+    position: fixed;
+    margin: 0;
+}
+#winTxt{
+    font-size: 42px;
+    margin: 0;
+    padding-left: 5px;
+    position: relative;
+    bottom: 27px;
+    transform: scaleX(104%);
+}
+#winLogo{
+    width: 92px;
+    height: 92px;
+    margin: 0;
+    padding-left: 65px;
+}
+#microTxt{
+    font-size: 12px;
+    transform: scaley(100%);
+    letter-spacing: 0.5px;
+    margin: 0;
+    bottom: 23px;
+    position: relative;
+}
+#xpTxt{
+    font-size: 31px;
+    color: #FF7400;
+    padding-left: 159px;
+    top: 50px;
+    position: absolute;
+}
+#instructions{
+    margin: 0;
+    font-size:30px;
+    top:-5px;
+    left:-190px;
+    position: relative;
+    transform: scaleX(106%);
+}
